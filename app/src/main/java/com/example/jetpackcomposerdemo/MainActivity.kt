@@ -50,7 +50,7 @@ class MainActivity : ComponentActivity() {
                 border(1.dp, MaterialTheme.colors.onSecondary, CircleShape))
             Spacer(modifier = Modifier.width(10.dp))
             Column {
-                Text(text = "Hello Test",
+                Text(text = "Hello Test github workflows",
                     color = MaterialTheme.colors.secondaryVariant,
                 )
                 Spacer(modifier = Modifier.height(5.dp))
