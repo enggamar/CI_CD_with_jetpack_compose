@@ -15,4 +15,7 @@ jobs:
         with:
           java-version: 11
       - name: Build Project
-        run: ./gradlew assembleDebug
+        run: ./gradlew build
+        
+        publish:
+        needs: build
