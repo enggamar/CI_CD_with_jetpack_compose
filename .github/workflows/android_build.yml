@@ -16,13 +16,6 @@ jobs:
         with:
           java-version: 11
       - name: Build Project
-        run: ./gradlew assembleDebug
+        run: ./gradlew build
 
-       -name: Upload APK
-        uses: actions/upload-artifacts@v2
-        with:
-          name: apk
-          path: app/build/outputs/apk/debug/**.apk
-
-
-
+    
