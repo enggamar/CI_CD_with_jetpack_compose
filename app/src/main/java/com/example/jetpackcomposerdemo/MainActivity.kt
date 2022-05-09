@@ -28,7 +28,7 @@ class MainActivity : ComponentActivity() {
             // A surface container using the 'background' color from the theme
 //            Surface(color = Color.Blue)
             MaterialTheme {
-                Greeting("Android")
+                Greeting("Android test")
             }
 //            }
         }
