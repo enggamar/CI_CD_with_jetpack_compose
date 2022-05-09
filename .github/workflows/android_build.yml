@@ -5,7 +5,7 @@ on: pull_request
 jobs:
   apk:
   name: Generate APK
-  needs: test
+  needs: apk
   runs-on: ubuntu-latest
   steps:
     - name: Checkout
