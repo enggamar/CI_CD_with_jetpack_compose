@@ -14,7 +14,14 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 11
-      - name: Make gradlew executable
-        run: chmod +x .\gradlew
       - name: Build Project
-        run: .\gradlew build
+        run: ./gradlew build
+
+       -name: Upload APK
+        uses: actions/upload-artifacts@v1
+        with:
+          name: apk
+          path: app/build/outputs/apk/debug/**.apk
+
+
+
